@@ -1,0 +1,40 @@
+# Auto detect text files and perform LF normalization
+  * text=auto
+
+  # Java files
+  *.java text diff=java
+  *.kt text diff=kotlin
+
+  # Properties files
+  *.properties text
+
+  # XML files
+  *.xml text
+
+  # JSON files
+  *.json text
+
+  # Web files
+  *.html text diff=html
+  *.css text diff=css
+  *.js text
+  *.ts text
+  *.tsx text
+  *.jsx text
+
+  # Shell scripts
+  *.sh text eol=lf
+  *.bat text eol=crlf
+
+  # Binary files
+  *.jar binary
+  *.war binary
+  *.ear binary
+  *.zip binary
+  *.tar.gz binary
+  *.png binary
+  *.jpg binary
+  *.jpeg binary
+  *.gif binary
+  *.ico binary
+  *.svg binary
