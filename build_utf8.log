@@ -1,0 +1,62 @@
+﻿[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.devtiro:ticket-platform:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-validation:jar -> duplicate declaration of version (?) @ line 58, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.devtiro:ticket-platform >---------------------
+[INFO] Building ticket-platform 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ ticket-platform ---
+[INFO] Deleting E:\ticket_booking_CLI-main\ticket-platform\ticket-platform\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ticket-platform ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ ticket-platform ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 46 source files with javac [debug parameters release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/TicketType.java:[43,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/Event.java:[47,24] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/Event.java:[50,23] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/Event.java:[52,30] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/Ticket.java:[40,36] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/domain/entities/Ticket.java:[44,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] 6 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/services/impl/EventServiceImpl.java:[109,45] cannot find symbol
+  symbol:   variable eventToCreate
+  location: class com.devtiro.ticket_platform.services.impl.EventServiceImpl
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.222 s
+[INFO] Finished at: 2026-02-16T17:31:40+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project ticket-platform: Compilation failure
+[ERROR] /E:/ticket_booking_CLI-main/ticket-platform/ticket-platform/src/main/java/com/devtiro/ticket_platform/services/impl/EventServiceImpl.java:[109,45] cannot find symbol
+[ERROR]   symbol:   variable eventToCreate
+[ERROR]   location: class com.devtiro.ticket_platform.services.impl.EventServiceImpl
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
